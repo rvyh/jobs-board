@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+body {
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: #b5c5c5;
+}
+
+@media screen and (max-width: 1010px) {
+  .app {
+    margin: 0 10px;
+  }
+}
+
+.detail-logo {
+  height: 40px;
+  float: right;
+}
+
+.job-company {
+  padding: 0 30px;
+}
+
+/* modal or popup for a single job */
+.job-dialog {
+  padding: 30px 50px;
+}
