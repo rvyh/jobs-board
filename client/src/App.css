@@ -22,7 +22,7 @@ body {
   padding: 0 30px;
 }
 
-/* modal or popup for a single job */
+/* modal (dialog) for a single job */
 .job-dialog {
   padding: 30px 50px;
 }
