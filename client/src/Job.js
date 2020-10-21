@@ -17,6 +17,14 @@ const useStyles = makeStyles(() => ({
       cursor: "pointer",
       color: "#666666"
     }
+  },
+  logo: {
+    width: "60px",
+    maxHeight: "60px",
+    paddingRight: "15px"
+  },
+  mainText: {
+    flex: "1"
   }
 }));
 
@@ -25,6 +33,11 @@ export default function Job({ job, onClick }) {
   return (
     <Paper onClick={onClick} className={classes.root}>
       <div>
+        {job.company_logo ? 
+        <img className={classes.logo} src={job.company_logo} alt={job.company} /> : 
+        <img className={classes.logo} src="./img/default-logo.png" alt="default logo" />}
+      </div>
+      <div className={classes.mainText}>
         <Typography variant="h6" component="h2">{job.title}</Typography>
         <Typography variant="subtitle2">{job.company}</Typography>
         <Typography>{job.location}</Typography>
